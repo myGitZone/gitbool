@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <style>
+    #box {
+      width: 100px;
+      padding: 0 10px;
+      height: 50px;
+      /*所有浏览器*/
+      background: wheat;
+      background: blue!important;
+      /*IE8以及以下版本浏览器*/
+      background: red\9;
+
+      margin: 70px;
+    }
+  </style>
+  <script type="text/javascript" src="../js/jquery-1.6.4.js"></script>
+</head>
+
+<body>
+  <div id="box">
+  </div>
+  <script>
+    var box = $('#box');
+    var boxboxWidth = box[0].offsetWidth;//包括补白、边框和内容宽度  
+    alert(boxWidth + ":" + box.width());//专指内容的宽度
+  </script>
+</body>
+
+</html>
