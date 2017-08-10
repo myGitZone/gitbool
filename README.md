@@ -1,0 +1,2 @@
+# gitbool
+a learn bool
